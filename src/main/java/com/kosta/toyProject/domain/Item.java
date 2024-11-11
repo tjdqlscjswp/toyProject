@@ -5,12 +5,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@Setter
 public class Item {
 
-    private Long id; // 물건의 고유 id
-    private String name; // 물건의 이름
-    private Long count; // 물건의 개수(재고)
+    private Long id;
+    private String name;
+    private Long count;
 
     @Builder
     public Item(String name, Long count) {
@@ -29,4 +28,5 @@ public class Item {
         this.name = name;
         this.count = count;
     }
+
 }
