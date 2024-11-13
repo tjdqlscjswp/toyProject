@@ -55,4 +55,8 @@ public class ItemService {
         itemRepository.deleteById(id); // itemRepository를 통해 id에 해당하는 item을 찾아서 삭제
     }
 
+    public int add(int x, int y){
+        return x+y;
+    }
+
 }
